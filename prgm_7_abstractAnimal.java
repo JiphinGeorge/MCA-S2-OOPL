@@ -61,10 +61,8 @@ class Cat extends Animal {
 public class prgm_7_abstractAnimal {
     public static void main(String args[]) {
         Animal a;
-
         a = new Dog("Mammal", 3, 12, "Brown", "Labrador", "Rocky", "Jiphin");
-        a.display();   // Dynamic Dispatch
-
+        a.display();   
         a = new Cat("Mammal", 2, 5, "White", "Kitty", "Blue", 20);
         a.display();
     }
