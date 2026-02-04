@@ -41,7 +41,7 @@ class Student {
     }
 }
 
-public class Student_Main {
+public class prgm_3_Student_Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

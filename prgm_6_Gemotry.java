@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Geometry {
+class prgm_6_Gemotry {
 
     int area(int side) {
         return side * side;
@@ -16,7 +16,7 @@ class Geometry {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Geometry g = new Geometry();
+        prgm_6_Gemotry g = new prgm_6_Gemotry();
 
        
         System.out.print("Enter side of square: ");

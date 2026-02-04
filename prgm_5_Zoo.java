@@ -1,8 +1,8 @@
-class Zoo {
+class prgm_5_Zoo {
     String name;
     String[] regions;
 
-    Zoo(String name, String[] regions) {
+    prgm_5_Zoo(String name, String[] regions) {
         this.name = name;
         this.regions = regions;
     }
@@ -57,8 +57,8 @@ class Zoo {
 
        
         String[] regions = {"Area-1", "Area-2", "Area-3"};
-        Zoo zoo = new Zoo("National Wildlife Zoo", regions);
-        Zoo.Contact contact = new Zoo.Contact(
+        prgm_5_Zoo zoo = new prgm_5_Zoo("National Wildlife Zoo", regions);
+        prgm_5_Zoo.Contact contact = new prgm_5_Zoo.Contact(
                 "Green Park Road, City Center",
                 "9876543210"
         );
@@ -66,19 +66,19 @@ class Zoo {
         contact.display();
         System.out.println();
 
-        Zoo.Enclosure e1 = zoo.new Enclosure(
+        prgm_5_Zoo.Enclosure e1 = zoo.new Enclosure(
                 "Grassland",
                 "Outdoor",
                 new String[]{"Lion", "Zebra", "Deer"}
         );
 
-        Zoo.Enclosure e2 = zoo.new Enclosure(
+        prgm_5_Zoo.Enclosure e2 = zoo.new Enclosure(
                 "Fly Zone",
                 "Indoor",
                 new String[]{"Parrot", "Eagle", "Owl"}
         );
 
-        Zoo.Enclosure e3 = zoo.new Enclosure(
+        prgm_5_Zoo.Enclosure e3 = zoo.new Enclosure(
                 "Aquatic",
                 "Indoor",
                 new String[]{"Fish", "Turtle", "Crocodile"}
