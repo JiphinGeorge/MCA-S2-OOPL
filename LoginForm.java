@@ -7,14 +7,14 @@ import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
- 
+
+
 public class LoginForm extends Application {
  
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Login Form");
- 
-        // Create GridPane layout
+
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.CENTER); 
         grid.setHgap(10);                                              
