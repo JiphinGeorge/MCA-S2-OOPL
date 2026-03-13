@@ -1,56 +1,44 @@
+// Lambda Expressions
 
-interface ComparableShape {
-    double volume();
-    int compare(ComparableShape other);
+// Design a functional interface, Dim, having the method to find area.
+// Create lambda functions to find the area of:
+// (a) Square
+// (b) Cube
+// (c) Circle
+// (d) Sphere
+
+
+interface Dim {
+    double area(double x);
 }
 
-class Cuboid implements ComparableShape {
-
-    double length, width, height;
-
-    Cuboid(double l, double w, double h) {
-        length = l;
-        width = w;
-        height = h;
-    }
-
-    public double volume() {
-        return length * width * height;
-    }
-
-    public int compare(ComparableShape other) {
-        return Double.compare(this.volume(), other.volume());
-    }
-}
-
-class Cylinder implements ComparableShape {
-
-    double radius, height;
-
-    Cylinder(double r, double h) {
-        radius = r;
-        height = h;
-    }
-
-    public double volume() {
-        return Math.PI * radius * radius * height;
-    }
-
-    public int compare(ComparableShape other) {
-        return Double.compare(this.volume(), other.volume());
-    }
-}
-
-public class prgm_15_ComparableShapes {
-
+public class Pg14_Lambda {
     public static void main(String[] args) {
 
-        Cuboid c1 = new Cuboid(4,5,6);
-        Cylinder c2 = new Cylinder(3,7);
+        // (a) Square
+        Dim square = (side) -> side * side;
 
-        if(c1.compare(c2) > 0)
-            System.out.println("Cuboid has larger volume");
-        else
-            System.out.println("Cylinder has larger volume");
+        // (b) Cube (Surface Area = 6a²)
+        Dim cube = (side) -> 6 * side * side;
+
+        // (c) Circle
+        Dim circle = (radius) -> 3.14 * radius * radius;
+
+        // (d) Sphere (Surface Area = 4πr²)
+        Dim sphere = (radius) -> 4 * 3.14 * radius * radius;
+
+        double value = 4;
+
+        System.out.println("Square Area = " + square.area(value));
+        System.out.println("Cube Surface Area = " + cube.area(value));
+        System.out.println("Circle Area = " + circle.area(value));
+        System.out.println("Sphere Surface Area = " + sphere.area(value));
     }
 }
+
+
+
+// Square Area = 16.0
+// Cube Surface Area = 96.0
+// Circle Area = 50.24
+// Sphere Surface Area = 200.96
