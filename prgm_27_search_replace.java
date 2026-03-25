@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class prgm_26_search_replace {
+public class prgm_27_search_replace {
 
     public static void main(String[] args) {
 
