@@ -7,7 +7,7 @@ to efficiently store and retrieve student names based on their ID.
 
 import java.util.*;
 
-public class Pg18_StudentManager {
+public class prgm_19_StudentInfo {
 
     public static void main(String[] args) {
 
