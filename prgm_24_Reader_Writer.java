@@ -1,8 +1,6 @@
 class prgm_24_Reader_Writer{
-
     static final Object lock = new Object();
     static boolean written = false;
-
     static class Reader extends Thread {
         public void run() {
             synchronized (lock) {
@@ -17,7 +15,6 @@ class prgm_24_Reader_Writer{
             }
         }
     }
-
     static class Writer extends Thread {
         public void run() {
             synchronized (lock) {
@@ -27,12 +24,10 @@ class prgm_24_Reader_Writer{
             }
         }
     }
-
     public static void main(String[] args) {
 
         Reader r = new Reader();
         Writer w = new Writer();
-
         r.start();
         w.start();
     }

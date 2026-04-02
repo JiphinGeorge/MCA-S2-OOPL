@@ -13,7 +13,6 @@ class Employee implements Serializable {
         this.salary = salary;
     }
 }
-
 public class prgm_28_employee_file {
 
     public static void main(String[] args) {
