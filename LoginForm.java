@@ -59,7 +59,6 @@ public class LoginForm extends Application {
             primaryStage.close(); // Close the login window
         });
  
- 
         // Create HBox for buttons
         HBox buttonBox = new HBox(10); 
         buttonBox.setAlignment(Pos.BOTTOM_RIGHT);
