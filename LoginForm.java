@@ -33,7 +33,7 @@ public class LoginForm extends Application {
         grid.add(passwordLabel, 0, 1);
         grid.add(passwordField, 1, 1);
  
- 
+
         // Create buttons
         Button loginButton = new Button("Login");
         Button cancelButton = new Button("Cancel");
