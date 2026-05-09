@@ -12,6 +12,7 @@ public class LoginForm extends Application {
  
     @Override
     public void start(Stage primaryStage) {
+     
         primaryStage.setTitle("Login Form");
 
         GridPane grid = new GridPane();
