@@ -8,7 +8,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 
-
 public class LoginForm extends Application {
  
     @Override
